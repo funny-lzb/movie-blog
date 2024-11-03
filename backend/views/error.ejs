@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>错误</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <div class="container mx-auto p-4">
+      <h1 class="text-3xl font-bold text-red-600 mb-4">错误</h1>
+      <p class="text-gray-700"><%= error %></p>
+      <p class="text-gray-600"><%= message %></p>
+      <a
+        href="/movie"
+        class="mt-4 inline-block px-4 py-2 bg-blue-500 text-white rounded"
+        >返回首页</a
+      >
+    </div>
+  </body>
+</html>
