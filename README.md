@@ -24,42 +24,58 @@
 ## 安装步骤
 
 1. 克隆项目
-   bash
+
+   ```bash
    git clone git@github.com:funny-lzb/class-vs-function-Component.git
+
    cd movie-system
+   ```
+
 2. 安装依赖
-   bash
+
+   ```bash
    cd backend
-   npm install / pnpm install
+
+   npm install 或者 pnpm install
+   ```
+
 3. 配置环境变量
-   bash
    创建开发环境配置文件 .env.development
+
    DB_HOST=localhost
    DB_USER=your_username
    DB_PASSWORD=your_password
    DB_NAME=movie
 
 4. 启动服务器
-   bash
-   npm run dev / pnpm dev
+   ```bash
+   npm run dev 或者 pnpm dev
+   ```
 
 ## 数据爬虫
 
 项目包含一个 Python 爬虫脚本，用于获取电影数据：
 
 1. 安装 Python 依赖
-   bash
+
+   ```bash
    cd py
+
    pip install requests beautifulsoup4 mysql-connector-python python-dotenv
+   ```
+
 2. 配置爬虫环境变量
    创建 .env.development
+
    DB_HOST=localhost
    DB_USER=your_username
    DB_PASSWORD=your_password
    DB_NAME=movie
+
 3. 运行爬虫
-   bash
+   ```bash
    python crawler.py
+   ```
 
 ## API 端点
 
@@ -112,3 +128,7 @@ DB_HOST=localhost
 DB_USER=root
 DB_PASSWORD=your_password
 DB_NAME=movie
+
+```
+
+```
