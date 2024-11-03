@@ -85,6 +85,7 @@
 
 ## 项目结构
 
+```
 movie-system/
 ├── backend/
 │ ├── config/ # 配置文件
@@ -122,13 +123,10 @@ movie-system/
 ## 环境变量配置
 
 项目使用 .env 文件管理环境变量：
-bash
+
 .env.development
 DB_HOST=localhost
 DB_USER=root
 DB_PASSWORD=your_password
 DB_NAME=movie
-
-```
-
 ```
