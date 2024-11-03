@@ -96,6 +96,7 @@ movie-system/
 ├── py/
 │ └── crawler.py # 数据爬虫
 └── README.md
+```
 
 ## 主要功能
 
@@ -129,4 +130,7 @@ DB_HOST=localhost
 DB_USER=root
 DB_PASSWORD=your_password
 DB_NAME=movie
+
+```
+
 ```
