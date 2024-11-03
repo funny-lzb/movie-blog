@@ -4,14 +4,20 @@ import json
 import time
 import mysql.connector
 from datetime import datetime
+from dotenv import load_dotenv
+import os
+
+# 加载指定的环境文件
+env_path = f".env.{os.getenv('PYTHON_ENV', 'development')}"
+load_dotenv(env_path)
 
 class DatabaseConnection:
     def __init__(self):
         self.db_config = {
-            'host': 'localhost',
-            'user': 'root',
-            'password': '129239',
-            'database': 'movie'
+            'host': os.getenv('DB_HOST', 'localhost'),
+            'user': os.getenv('DB_USER', 'root'),
+            'password': os.getenv('DB_PASSWORD'),
+            'database': os.getenv('DB_NAME', 'movie')
         }
     
     def __enter__(self):
